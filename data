@@ -1,0 +1,3 @@
+!wget -O crab_nebula_i.fits "https://ps1images.stsci.edu/cgi-bin/fitscut.cgi?ra=83.63308333333332&dec=22.0145&size=1200&format=fits&red=/rings.v3.skycell/1784/059/rings.v3.skycell.1784.059.stk.i.unconv.fits"
+!wget -O crab_nebula_r.fits "https://ps1images.stsci.edu/cgi-bin/fitscut.cgi?ra=83.63308333333332&dec=22.0145&size=1200&format=fits&red=/rings.v3.skycell/1784/059/rings.v3.skycell.1784.059.stk.r.unconv.fits"
+!wget -O crab_nebula_g.fits "https://ps1images.stsci.edu/cgi-bin/fitscut.cgi?ra=83.63308333333332&dec=22.0145&size=1200&format=fits&red=/rings.v3.skycell/1784/059/rings.v3.skycell.1784.059.stk.g.unconv.fits"

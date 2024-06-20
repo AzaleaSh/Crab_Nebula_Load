@@ -1,0 +1,23 @@
+import matplotlib
+import matplotlib.pyplot as plt
+from astropy.utils.data import download_file
+from astropy.io import fits
+from matplotlib.colors import LogNorm
+from matplotlib.colors import *
+import pprint
+from glob import glob
+
+
+def show_image(image_name):
+  hdfile = fits.open(image_name)
+  image_data = hdfile[0].data
+  nonnanarray = image_data[~np.isnan(image_data)]
+  min = nonnanarray.min()
+  image_data = image_data - min + 11
+  hdfile.close()
+  fig, axarr = plt.subplots(1, 1, figsize=(6,6))
+  axarr.imshow(image_data, cmap = 'twilight', norm=LogNorm())
+  plt.close('fig')
+
+for optical_file_name in glob('* .fits'):
+  show_image(optical_file_name)
